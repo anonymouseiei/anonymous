@@ -3,7 +3,7 @@ from plotly.graph_objs import *
 from pydblite import Base
 year = []
 lst_jungwat = []
-lst_birth = []
+lst_death = []
 db = Base('Thai-db.pdl')
 db.open()
 for i in db('ปี'): #ใส่ปีใน li
@@ -17,14 +17,14 @@ for i in db('จังหวัด'): #ใส่จังหวัดใน list
     else:
         lst_jungwat.append(i['จังหวัด'])
 i = 0
-def change_birth(j):
+def change_death(j):
     for i in db('จังหวัด') == lst_jungwat[j]:
-        lst_birth.append(i['ตาย'])
+        lst_death.append(i['ตาย'])
 """-----------------------------------------------"""
-change_birth(i)
+change_death(i)
 trace1 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 0, 0)',
@@ -34,12 +34,12 @@ trace1 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace2 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(119, 136, 153)',
@@ -50,12 +50,12 @@ trace2 = Scatter(
 )
 """-----------------------------------------------"""
 
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace3 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(198, 226, 255)',
@@ -65,12 +65,12 @@ trace3 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace4 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(151, 255, 255)',
@@ -80,12 +80,12 @@ trace4 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace5 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(238, 232, 170)',
@@ -95,12 +95,12 @@ trace5 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace6 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 69, 19)',
@@ -110,12 +110,12 @@ trace6 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace7 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 133, 63)',
@@ -125,12 +125,12 @@ trace7 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace8 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(244, 164, 96)',
@@ -140,12 +140,12 @@ trace8 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace9 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(255, 218, 185)',
@@ -155,12 +155,12 @@ trace9 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace10 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(238, 207, 161)',
@@ -170,12 +170,12 @@ trace10 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace11 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 201, 165)',
@@ -185,12 +185,12 @@ trace11 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace12 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 136, 120)',
@@ -200,12 +200,12 @@ trace12 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace13 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(132, 112, 255)',
@@ -215,12 +215,12 @@ trace13 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace14 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(71, 60, 139)',
@@ -230,12 +230,12 @@ trace14 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace15 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(72, 118, 255)',
@@ -245,12 +245,12 @@ trace15 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace16 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(39, 64, 139)',
@@ -260,12 +260,12 @@ trace16 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace17 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 0, 255)',
@@ -275,12 +275,12 @@ trace17 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace18 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(25, 25, 112)',
@@ -290,12 +290,12 @@ trace18 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace19 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(176, 224, 230)',
@@ -305,12 +305,12 @@ trace19 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace20 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(24, 116, 205)',
@@ -320,12 +320,12 @@ trace20 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace21 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 154, 205)',
@@ -335,12 +335,12 @@ trace21 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace22 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(74, 112, 139)',
@@ -350,12 +350,12 @@ trace22 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace23 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(95, 158, 160)',
@@ -365,12 +365,12 @@ trace23 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace24 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(150, 205, 205)',
@@ -380,12 +380,12 @@ trace24 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace25 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 206, 209)',
@@ -395,12 +395,12 @@ trace25 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace26 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 245, 255)',
@@ -410,12 +410,12 @@ trace26 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace27 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(102, 205, 170)',
@@ -425,12 +425,12 @@ trace27 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace28 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(46, 139, 87)',
@@ -440,12 +440,12 @@ trace28 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace29 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 139, 69)',
@@ -455,12 +455,12 @@ trace29 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace30 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 255, 0)',
@@ -470,12 +470,12 @@ trace30 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace31 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 100, 0)',
@@ -485,12 +485,12 @@ trace31 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace32 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(32, 178, 170)',
@@ -500,12 +500,12 @@ trace32 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace33 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 250, 154)',
@@ -515,12 +515,12 @@ trace33 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace34 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(107, 142, 35)',
@@ -530,12 +530,12 @@ trace34 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace35 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(202, 255, 112)',
@@ -545,12 +545,12 @@ trace35 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace36 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(255, 246, 143)',
@@ -560,12 +560,12 @@ trace36 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace37 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 134, 78)',
@@ -575,12 +575,12 @@ trace37 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace38 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(255, 255, 0)',
@@ -590,12 +590,12 @@ trace38 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace39 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 139, 0)',
@@ -605,12 +605,12 @@ trace39 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace40 = Scatter(
     x=[2554, 2555, 2556, 2557],
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 173, 0)',
@@ -620,12 +620,12 @@ trace40 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace41 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 101, 8)',
@@ -635,12 +635,12 @@ trace41 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace42 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(188, 143, 143)',
@@ -650,12 +650,12 @@ trace42 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace43 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(255, 193, 193)',
@@ -665,12 +665,12 @@ trace43 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
+i += 1
 lst_birth = []
-change_birth(i)
+change_death(i)
 trace44 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 92, 92)',
@@ -680,12 +680,12 @@ trace44 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace45 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(255, 130, 71)',
@@ -695,12 +695,12 @@ trace45 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace46 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 71, 38)',
@@ -710,12 +710,12 @@ trace46 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace47 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 115, 85)',
@@ -725,12 +725,12 @@ trace47 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace48 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 133, 63)',
@@ -740,12 +740,12 @@ trace48 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace49 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(255, 127, 36)',
@@ -755,12 +755,12 @@ trace49 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace50 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 38, 38)',
@@ -770,12 +770,12 @@ trace50 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace51 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(255, 20, 147)',
@@ -785,12 +785,12 @@ trace51 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace52 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 10, 80)',
@@ -800,12 +800,12 @@ trace52 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace53 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 96, 144)',
@@ -815,12 +815,12 @@ trace53 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace54 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 99, 108)',
@@ -830,12 +830,12 @@ trace54 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace55 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(176, 48, 96)',
@@ -845,12 +845,12 @@ trace55 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace56 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 0, 205)',
@@ -860,12 +860,12 @@ trace56 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace57 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(139, 0, 139)',
@@ -875,12 +875,12 @@ trace57 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace58 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(186, 85, 211)',
@@ -890,12 +890,12 @@ trace58 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace59 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(148, 0, 211)',
@@ -905,12 +905,12 @@ trace59 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace60 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(128, 0, 128)',
@@ -920,12 +920,12 @@ trace60 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace61 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(236, 171, 83)',
@@ -935,12 +935,12 @@ trace61 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace62 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(192, 192, 192)',
@@ -950,12 +950,12 @@ trace62 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace63 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 128, 128)',
@@ -965,12 +965,12 @@ trace63 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace64 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(255, 204, 153)',
@@ -980,12 +980,12 @@ trace64 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace65 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(142, 124, 195)',
@@ -995,12 +995,12 @@ trace65 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace66 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 154, 205)',
@@ -1010,12 +1010,12 @@ trace66 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace67 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(238, 59, 59)',
@@ -1025,12 +1025,12 @@ trace67 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace68 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(50, 205, 50)',
@@ -1040,12 +1040,12 @@ trace68 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace69 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(34, 139, 34)',
@@ -1055,12 +1055,12 @@ trace69 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace70 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(105, 139, 34)',
@@ -1070,12 +1070,12 @@ trace70 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace71 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(205, 173, 0)',
@@ -1085,12 +1085,12 @@ trace71 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace72 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(0, 154, 205)',
@@ -1100,12 +1100,12 @@ trace72 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace73 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(155, 205, 155)',
@@ -1115,12 +1115,12 @@ trace73 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace74 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(46, 139, 87)',
@@ -1130,12 +1130,12 @@ trace74 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace75 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(192, 255, 62)',
@@ -1145,12 +1145,12 @@ trace75 = Scatter(
     uid='dd3a3c'
 )
 """-----------------------------------------------"""
-i+= 1
-lst_birth = []
-change_birth(i)
+i += 1
+lst_death = []
+change_death(i)
 trace76 = Scatter(
     x=year,
-    y=lst_birth,
+    y=lst_death,
     connectgaps=True,
     line=Line(
         color='rgb(95, 158, 160)',
