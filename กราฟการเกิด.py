@@ -609,7 +609,7 @@ i += 1
 lst_birth = []
 change_birth(i)
 trace40 = Scatter(
-    x=year,
+    x=[2554, 2555, 2556, 2557],
     y=lst_birth,
     connectgaps=True,
     line=Line(
