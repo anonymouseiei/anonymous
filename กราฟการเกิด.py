@@ -6,7 +6,7 @@ lst_jungwat = []
 lst_birth = []
 db = Base('Thai-db.pdl')
 db.open()
-for i in db('ปี'): #ใส่ปีใน li
+for i in db('ปี'): #ใส่ปีใน list
     if i['ปี'] in year:
         break
     else:
@@ -1214,7 +1214,7 @@ layout = Layout(
     separators='.,',
     showlegend=False,
     smith=False,
-    title='กราฟแสดงจำนวนการเกิดของประเทศไทย ปี 2548-2557',
+    title='The graph shows the number of birth since 2548 to 2557 .',
     titlefont=dict(
         color='',
         family='',
@@ -1253,7 +1253,7 @@ layout = Layout(
         ticklen=5,
         ticks='',
         tickwidth=1,
-        title='<i>ปี</i>',
+        title='<i>year</i>',
         titlefont=dict(
             color='',
             family='',
@@ -1296,7 +1296,7 @@ layout = Layout(
         ticklen=5,
         ticks='',
         tickwidth=1,
-        title='จำนวนการเกิด',
+        title='number of birth',
         titlefont=dict(
             color='',
             family='',
