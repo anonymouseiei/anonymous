@@ -1317,6 +1317,7 @@ def make_graph():
             zeroline=False,
             zerolinecolor='#000',
             zerolinewidth=1
+			a = a+1
         )
     )
     fig = Figure(data=data, layout=layout)
